@@ -106,7 +106,13 @@ html, body {
     padding: 2% 0;
 }
 
-
+.serverMsg{
+    padding-top: 5px;
+    font-size: 80%;
+    font-weight: bold;
+    color:#32434F;
+    text-align: center;
+}
 
 /***************************************************************************************/
 /*              HEADER                                                          */
@@ -135,7 +141,7 @@ header img {
 .main-nav {
     float: right;
     height:100%;
-    width: 50%;
+    width: 70%;
 }
 
 .main-nav ul {
@@ -151,7 +157,7 @@ header img {
 .main-nav ul li {
     display: inline-block;
     list-style-type: none;
-    margin: 0 5%;
+    margin: 0 0 0 10%;
 }
 
 .main-nav li a:link,
@@ -515,6 +521,10 @@ footer {
     .mobile-nav li a:hover,
     .mobile-nav li a:active {
         border-bottom :2px solid #ff8700;
+    }
+
+    .main-nav ul li {
+        margin: 0 1%;
     }
 
     /* header */
