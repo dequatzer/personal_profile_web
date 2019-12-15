@@ -114,6 +114,8 @@ html, body {
     text-align: center;
 }
 
+
+
 /***************************************************************************************/
 /*              HEADER                                                          */
 /***************************************************************************************/
@@ -478,31 +480,28 @@ footer {
     }
 
     .mobile-nav-icon {
-        height: 100%;
         color: #ff8700;
-        /* font-size: 150%; */
         float: right;
-        margin-right: 5%;
+        margin: 25px 20px 0 0;
+        font-size: 150%;
+        
     }
 
-    .mobile-nave-icon-close {
-        color: #ff8700;
-        /* font-size: 150%; */
-        position: absolute;
-        top: 30px;
-        right: 30px;
-        z-index:200;
-    }
+   
 
     .mobile-nav {
-        display: none;
         width: 100%;
+        height: 60%;
         background-color: #32434F;
         position: absolute;
         top: 0;
         left: 0;
         z-index: 100;
+        opacity: 0;        
+        animation: 0.5s appear forwards;
+        animation-delay: 0.1s;
     }
+
 
     .mobile-nav ul li {
         display: block;
@@ -526,6 +525,33 @@ footer {
     .main-nav ul li {
         margin: 0 1%;
     }
+
+    @keyframes appear {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      
+      @keyframes slideIn {
+        0% {
+          transform: translateX(-2%);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+      
+      @keyframes shrink {
+        0% {
+          width: 95%;
+        }
+        100% {
+          width: 90%;
+        }
+      }
 
     /* header */
     .section-header {
