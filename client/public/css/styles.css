@@ -281,6 +281,7 @@ header img {
     background-position: center;
     background-repeat: none;
     background-size: cover;
+    font-size:90%;
 }
 
 .resume {
@@ -354,11 +355,14 @@ header img {
     opacity: 0.7;
     margin-left: 5px;
     transition: opacity 0.2s;
+    min-height: 290px;
 }
 
 .resume-edu-info:hover {
     opacity: 1;
 }
+
+
 
 .resume-edu-info ul li {
     list-style-type: none;
@@ -367,6 +371,7 @@ header img {
 
 .resume-edu-info ul li:first-child {
     font-weight: 700;
+    text-decoration: underline;
 }
 
 /***************************************************************************************/
@@ -435,6 +440,22 @@ header img {
      color:#ff8700;
  }
 
+ .social-networks ul {
+    height: 100%;
+    vertical-align: middle;
+    margin: 5px;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 150%;
+ }
+
+ .social-networks ul li a {
+     text-decoration: none;
+     color: black
+ }
+
 /***************************************************************************************/
 /*              Footer                                                          */
 /***************************************************************************************/
@@ -491,7 +512,7 @@ footer {
 
     .mobile-nav {
         width: 100%;
-        height: 60%;
+       
         background-color: #32434F;
         position: absolute;
         top: 0;
@@ -500,6 +521,10 @@ footer {
         opacity: 0;        
         animation: 0.5s appear forwards;
         animation-delay: 0.1s;
+    }
+
+    .mobile-nav ul {
+        vertical-align: middle;
     }
 
 
@@ -630,6 +655,8 @@ footer {
        width: 100%;
        padding: 10px;
        opacity: 1;
+       margin-top:5px;
+       min-height: auto;
     }
 
     .resume-info h3 {
@@ -640,6 +667,8 @@ footer {
          font-size: 100%;
          margin: 0 auto;
          padding: 0;
+            width:100%;
+            height: 100%;
      }
 
      .resume-download {
